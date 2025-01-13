@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Итоговая работа</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="index.html"
+              ><div class="wave">
+                <span style="--i: 1">Г</span>
+                <span style="--i: 2">л</span>
+                <span style="--i: 3">а</span>
+                <span style="--i: 4">в</span>
+                <span style="--i: 5">н</span>
+                <span style="--i: 6">а</span>
+                <span style="--i: 7">я</span>
+              </div></a
+            >
+          </li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <div class="container">
+        <section class="about-Introduction">
+          <div class="main-info">
+            <h2>О нашем проекте</h2>
+            <p>
+              Мы рады приветствовать вас на нашем сайте! Здесь вы найдете уникальные материалы и
+              информацию о нашем проекте. Мы стремимся предоставить вам лучшие сервисы и продукты,
+              которые сделают вашу жизнь проще и интереснее. Не упустите возможность ознакомиться с
+              нашими новинками!
+            </p>
+          </div>
+        </section>
+
+        <div class="book-block">
+          <div class="book-img">
+            <img
+              src="https://content.img-gorod.ru/pim/products/images/29/71/0191df70-8dbf-7471-8357-b600a68d2971.jpg?width=336&height=480&fit=bounds"
+              alt="Обложка книги"
+            />
+          </div>
+          <h2>Адвокат киллера</h2>
+          <p>Описание книги. Краткое и информативное описание.</p>
+          <div class="price-and-quantity">
+            <p class="price">Цена: 250 руб.</p>
+            <div class="quantity-control">
+              <button class="btn-book" onclick="decreaseQuantity('quantity')">-</button>
+              <input id="quantity" value="1" min="1" />
+              <button class="btn-book" onclick="increaseQuantity('quantity')">+</button>
+            </div>
+          </div>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Лев. Все права защищены. © 2024</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
